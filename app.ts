@@ -11,7 +11,7 @@ interface Coordinates {
 }
 
 function fetchTile(coords: Coordinates[]) {
-    const zoom: number = 15;
+    const zoom: number = 17;
 
     coords.forEach((coord, idx) => {
         const { lat, lng } = coord;
@@ -62,7 +62,14 @@ function coordsToTile(lat: number, lng: number, zoom: number): { tile_x: number,
 }
 
 const fcrd: Coordinates[] = [
+<<<<<<< Updated upstream
     { lat: 0.0, lng: 0.0 },
 ]
 
 fetchTile(fcrd);
+=======
+    { lat: 51.19806, lng: 14.81194 }
+]
+
+fetchTile(fcrd);
+>>>>>>> Stashed changes
